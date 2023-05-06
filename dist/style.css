@@ -4,15 +4,30 @@
     box-sizing: border-box;
 }
 
-.background{
-    background-size: cover;
-    
-    
-}
+
 
 body{
-    background:url("https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-vb1864323-GRBSKSouthPlaceAugust202114-2-Copy.jpg");
-    color: whitesmoke
+    background-image:url("https://img.freepik.com/free-photo/gourmet-meal-with-chopsticks-steaming-bowl-generative-ai_188544-12686.jpg");
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chefs {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.chef img{
+    height: 175px;
+    width: 175px;
+    border-radius: 80%;
+    opacity: 0.8;
+}
+
+.chef {
+    text-align: center;
 }
 
 .header{
@@ -59,4 +74,26 @@ body{
     opacity: 0.8;
     height: 200px;
     width: 100%;
+}
+
+
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Instrument Serif';
+    margin: 50px
+}
+
+.headline {
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    width: 700px;
+    font-size: 20px;
 }
