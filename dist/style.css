@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .background{
     background-size: cover;
@@ -31,10 +35,28 @@ body{
     font-size: 35px;
     text-align: center;
     cursor: pointer;
+    margin-top: 60px;
+}
+
+.tab:hover {
+    text-decoration: underline;
 }
 
 #title{
     height: 50px;
-    font-size: 50px;
+    font-size: 60px;
     font-family:'Alegreya Sans';
+    position: absolute;
+    top: 10px
+}
+
+.header-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    opacity: 0.8;
+    height: 200px;
+    width: 100%;
 }
