@@ -1,7 +1,9 @@
-
+import createRestaurantHomePage from "./restaurant"
+import createMenuPage from "./menu"
+import createContactPage from "./contact"
 
 const createTabs = () => {
-    const content = document.querySelector('.content')
+    const header = document.querySelector('.header')
     //create 3 div elements
     const div1 = document.createElement('div')
     const div2 = document.createElement('div')
@@ -19,12 +21,34 @@ const createTabs = () => {
     div2.textContent = 'Menu'
     div3.textContent = 'Contact'
     //append
-    content.appendChild(div1)
-    content.appendChild(div2)
-    content.appendChild(div3)
+    header.appendChild(div1)
+    header.appendChild(div2)
+    header.appendChild(div3)
+    //add event listeners
+    div1.addEventListener('click', ()=> {
+        clearContent()
+        createRestaurantHomePage()
+    })
+    div2.addEventListener('click', ()=> {
+        clearContent()
+        createMenuPage()
+    })
+    div3.addEventListener('click', ()=> {
+        clearContent()
+        createContactPage()
+    })
 
         
 
 }
 
+
+function clearContent(){
+    const content = document.querySelector('.content')
+    const pageContent = document.querySelector('.page-content')
+    if (pageContent){
+        content.removeChild(pageContent)
+    }
+}
 export default createTabs
+

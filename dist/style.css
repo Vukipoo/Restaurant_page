@@ -1,0 +1,40 @@
+
+
+.background{
+    background-size: cover;
+    
+    
+}
+
+body{
+    background:url("https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage121578650-50-vb1864323-GRBSKSouthPlaceAugust202114-2-Copy.jpg");
+    color: whitesmoke
+}
+
+.header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tab{
+    height: 35px;
+    width: 200px;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#title{
+    height: 50px;
+    font-size: 50px;
+    font-family:'Alegreya Sans';
+}
