@@ -45,10 +45,14 @@ const createTabs = () => {
 
 function clearContent(){
     const content = document.querySelector('.content')
-    const pageContent = document.querySelector('.page-content')
-    if (pageContent){
-        content.removeChild(pageContent)
+    const contentElements = document.querySelectorAll('.page-content, .menu-content, .contact-content');
+
+   contentElements.forEach(element => {
+    if(element) {
+        content.removeChild(element)
     }
+   })
+    
 }
 export default createTabs
 
